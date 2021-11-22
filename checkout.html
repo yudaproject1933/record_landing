@@ -28,7 +28,18 @@
 
         <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
 
-
+        <style>
+            .kotak-payment{
+                background-color: #f5f5f5;
+                padding: 10px;
+            }
+            .pay-method{
+                height: 700px;
+            }
+            .text-kanan{
+                text-align: right;
+            }
+        </style>
 
 
         <!--For Plugins external css-->
@@ -142,45 +153,66 @@
 
             <!--Home Sections-->
 
-            <section id="home" class="home bg-black fix">
-                <div class="overlay"></div>
+            <section id="home" class="home fix" style="background: none; padding-top: 130px;">
                 <div class="container">
                     <div class="row">
-                        <div class="main_home text-center">
-                            <div class="col-md-12">
-                                <div class="hello_slid">
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">Welcome to <strong>Made</strong></h2>
-                                            <h1 class="text-white">We Do Business All Of Time</h1>
-                                            <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -</h3>
-                                            <div class="row">
-                                                <div class="col-md-2"></div>
-                                                <div class="col-md-8">
-                                                    <form action="" method="POST">
-                                                        <div class="col-md-10">
-                                                            <input type="text" class="form-control" minlength="17" maxlength="17" name="vin" placeholder="Enter VIN Number" required>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <button class="btn btn-primary"><i class="fa fa-search"></i> Check Car!</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="col-md-2"></div>
-                                            </div>
-                                        </div>
-
-                                        <!-- <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-primary m-top-20">Buy Now</a>
-                                            <a href="" class="btn btn-default m-top-20">Take a Tour</a>
-                                        </div> -->
-                                    </div><!-- End off slid item -->
+                        <h1>Report Found!</h1>
+                        <div class="col-md-12">
+                            <table>
+                                <p><b>VIN :</b> 123123123123123123</p>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <h5>How would you like to pay?</h5>
+                        <div class="col-md-4">
+                            <div class="card kotak-payment">
+                                <div class="card-body">
+                                    <button class="btn btn-primary">PayPal</button><br><br>
+                                    <button class="btn btn-success">PayPal</button><br><br>
+                                    <button class="btn btn-success">PayPal</button>
                                 </div>
                             </div>
-
                         </div>
-
-
+                        <div class="col-md-8">
+                            <div class="card kotak-payment pay-method">
+                                <div class="card-body">
+                                    <h4>Order Summary</h4>
+                                  <table class="table">
+                                      <thead>
+                                          <tr>
+                                              <th>Name</th>
+                                              <th></th>
+                                              <th class="text-kanan">Total</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Full Report</td>
+                                              <td>x1</td>
+                                              <td class="text-kanan">$25</td>
+                                          </tr>
+                                      </tbody>
+                                      <tfoot>
+                                          <tr>
+                                              <th>Sub Total</th>
+                                              <th></th>
+                                              <th class="text-kanan">$25</th>
+                                          </tr>
+                                      </tfoot>
+                                  </table>
+                                  <hr>
+                                  <img src="data:image/png;base64,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" alt="" style="width: 200px;"> Pay Through a secure payment service
+                                  <br>
+                                  <br>
+                                  <hr>
+                                  <h6>Where should we send your report?</h6>
+                                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" style="border-radius: 25px;"><br>
+                                  <button class="btn btn-warning" disabled id="payment">Payment</button>
+                                </div>
+                            </div>
+                        </div>
                     </div><!--End off row-->
                 </div><!--End off container -->
             </section> <!--End off Home Sections-->
@@ -717,13 +749,13 @@
                             <div class="col-md-3">
                                 <div class="widget_item widget_newsletter sm-m-top-50">
                                     <h5 class="text-white">Newsletter</h5>
-                                    <!-- <form class="form-inline m-top-30">
+                                    <form class="form-inline m-top-30">
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Enter you Email">
                                             <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
                                         </div>
 
-                                    </form> -->
+                                    </form>
                                     <div class="widget_brand m-top-40">
                                         <a href="" class="text-uppercase">Your Logo</a>
                                         <p>Lorem ipsum dolor sit amet consec tetur 
@@ -744,7 +776,25 @@
                     </div>
                 </div>
                 <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
-                    
+                    <div class="col-md-12">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Made with 
+                            <i class="fa fa-heart"></i>
+                            by 
+                            <a target="_blank" href="https://bootstrapthemes.co">Bootstrap Themes</a> 
+                            2016. All Rights Reserved
+                        </p>
+                    </div>
+
+                    <div class="col-md-12 p-top-20">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Distributed
+                            <i class="fa fa-heart"></i>
+                            by 
+                            <a target="_blank" href="https://themewagon.com/">Themewagon</a> 
+                            2016. All Rights Reserved
+                        </p>
+                    </div>
 
 
                 </div>
@@ -772,6 +822,23 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                var email = $('#email').val();
+                $('#email').on('keyup change', function() {
+                    if(isEmail($(this).val())){
+                        $('#payment').prop("disabled", false);
+                    }else{
+                        $('#payment').prop("disabled", true);
+                    }
+                });
+            });
+            function isEmail(email) {
+                var EmailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return EmailRegex.test(email);
+            }
+        </script>
 
     </body>
 </html>
